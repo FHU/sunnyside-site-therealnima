@@ -1,1 +1,31 @@
 @import "tailwindcss";
+/* Custom properties for colors */
+/* - Grey 950: hsl(212, 27%, 19%)
+- Grey 600: hsl(213, 9%, 39%)
+- Grey 550: hsl(232, 10%, 55%)
+- Grey 400: hsl(210, 4%, 67%)
+- White: hsl(0, 100%, 100%) */
+@theme {
+  --color-brightred-400: hsl(7, 99%, 70%);
+  --color-yellow-500: hsl(51, 100%, 49%);
+  --color-green-800: hsl(167, 40%, 24%);
+  --color-blue-800: hsl(198, 62%, 26%); /* photography text */
+  --color-green-500: hsl(167, 34%, 41%); /* footer */
+  --color-Grey-950: hsl(212, 27%, 19%);
+  --color-Grey-600: hsl(213, 9%, 39%);
+  --color-Grey-550: hsl(232, 10%, 55%);
+  --color-Grey-400: hsl(210, 4%, 67%);
+  --color-White: hsl(0, 100%, 100%);
+  
+  --font-body:Barlow; 
+  --font-heading:Fraunces;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 40px 40px;
+  border-color: transparent transparent rgb(166, 26, 26) transparent;
+  margin: auto;
+}

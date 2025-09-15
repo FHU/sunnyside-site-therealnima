@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="output.css">
-  
+
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,54 +21,196 @@
   </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <header class="bg-transparent text-white flex justify-between px-6 py-8 items-center absolute w-full">
+    <a href="'" id="logo"><img src="images/logo.svg"></a>
 
-  We are creatives
+    <nav class="hidden sm:flex space-x-6 text-lg ">
+      <a href="#" class="hover:bg-White hover:text-Grey-950 p-2 rounded-full">About</a>
+      <a href="#" class="hover:bg-White hover:text-Grey-950 p-2 rounded-full">Services</a>
+      <a href="#" class="hover:bg-White hover:text-Grey-950 p-2 rounded-full" >Projects</a>
+      <a href="#" class="hover:bg-White hover:text-Grey-950 p-2 rounded-full" >Contact</a> 
+    </nav>
+    <a href="#" class="md:hidden" id="hamburger-menu">
+      <img src="images/icon-hamburger.svg" alt="menu">
+      <div class="absolute px-10 left-0 top-20 w-full sm:hidden hidden" id="mobile-menu">
+        <div class="triangle"></div>
+        <nav class=" w-full text-center bg-white text-Grey-950 flex flex-col m-auto py-10 gap-6 items-center ">
+          <a href="#" class="">About</a>
+          <a href="#" class="">Services</a>
+          <a href="#" class="" >Projects</a>
+          <a href="#" class="" >Contact</a> 
+        </nav>
+      </div>
+    </a>
+  </header>
 
-  Transform your brand
+<section id="hero" class="bg-[url(images/desktop/image-header.jpg)] bg-cover bg-center h-175 text-center pt-40 text-white">
+  <h1 class="font-heading text-6xl font-black">WE ARE CREATIVE</h1>
+  <img src="images/icon-arrow-down.svg" alt="" class="mx-auto py-11">
+</section>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+<!-- Start of the Grid!!!!!-->
 
-  Learn more
+<section class="grid grid-cols-1 md:grid-cols-2 items-stretch">
 
-  Stand out to the right audience
+  <div class="aspect-square bg-[url('/images/desktop/image-transform.jpg')] bg-cover bg-center md:order-2"></div>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
 
-  Learn more
+  <div class="p-10 md:order-1 flex flex-col justify-center max-w-lg mx-auto text-center md:text-left items-start">
+    <h2 class="font-heading font-black text-3xl md:text-4xl lg:text-5xl mb-6 text-Grey-950">
+      Transform your brand
+    </h2>
+    <p class="mb-4 text-Grey-550 font-body-700">
+      We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+    </p>
+  
+      
+    <a href="" class="
+    font-black
+    font-headings
+    uppercase
+    text-Grey-950
+    text-[13px]
+    relative z-0
+    after:content-['']
+    after:absolute 
+    after:left-[-10%]
+    after:bottom-[-2px]
+    after:w-[120%] after:h-2
+    after:bg-yellow-500
+    after:rounded-lg
+    after:-z-10
+    
+    after:opacity-0
+    after:transition-all 
+    after:duration-1000
+    hover:after:opacity-100
+">Learn more </a>
+  </div>
+</section>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+<section class="grid grid-cols-1 md:grid-cols-2 items-stretch">
 
-  Client testimonials
+  <div class="aspect-square bg-[url('/images/desktop/image-stand-out.jpg')] bg-cover bg-center"></div>
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
 
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
+  <div class="p-10 flex flex-col justify-center max-w-lg mx-auto text-center md:text-left items-start">
+    <h2 class="font-heading font-black text-3xl md:text-4xl lg:text-5xl mb-6 text-Grey-950">
+      Stand out to the right audience
+    </h2>
+    <p class="mb-6 text-Grey-550 font-body-700">
+      Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+    </p>
+    <a href="" class="
+    font-black
+    font-headings
+    uppercase
+     text-Grey-950
+    text-[13px]
+    relative z-0
+    after:content-['']
+    after:absolute 
+    after:left-[-10%]
+    after:bottom-[-2px]
+    after:w-[120%] after:h-2
+    after:bg-red-500
+    after:rounded-lg
+    after:-z-10
+    
+    after:opacity-0
+    after:transition-all 
+    after:duration-1000
+    hover:after:opacity-100
+">Learn more </a>
+  </div>
+</section>
 
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
+<section class="grid grid-cols-1 md:grid-cols-2 gap-0">
+  
+  <div class="aspect-square bg-[url('/images/desktop/image-graphic-design.jpg')] bg-cover bg-center flex flex-col items-center justify-center ">
+    <div class="transform translate-y-33 max-w-sm text-center">
+      <h3 class="font-bold text-3xl mb-3 text-center text-green-800">Graphic Design</h3>
+      <p class="text-green-800">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
+    </div>
+  </div>
 
-  About
-  Services
-  Projects
-  Contact
+  <div class="aspect-square bg-[url('/images/desktop/image-photography.jpg')] bg-cover bg-center flex flex-col items-center justify-center ">
+    <div class="transform translate-y-33 max-w-sm text-center">
+      <h3 class="font-bold text-3xl mb-3 text-center text-blue-800">Photography</h3>
+      <p class="text-blue-800">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+    </div>
+  </div>
+</section>
+<!-- End of the Grid!!!!!-->
+
+<section class="mb-12 md:mb-24 lg:mb-48">
+  <h1 class="text-center p-20 font-heading text-4xl text-Grey-400">Client testimonials</h1>
+  <div class="grid grid-cols-1 md:grid-cols-3 mx-auto">
+    <div>
+      <img src="images/image-emily.jpg" class="w-22 h-22 object-cover rounded-full flex justify-center mx-auto mb-5 ">
+      <div class="text-center max-w-sm mx-auto felx justify-center">
+          <p class="text-Grey-600 mb-5">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <h7 class="text-Grey-950 font-bold">Emily R.</h7>
+        <p class="text-Grey-400 mb-12">Marketing Director </p>
+      </div>
+    </div>
+    <div>
+      <img src="images/image-thomas.jpg" class="w-22 h-22 object-cover rounded-full flex justify-center mx-auto mb-5">
+      <div class="text-center max-w-sm mx-auto felx justify-center">
+        <p class="text-Grey-600 mb-5">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+        <h7 class="text-Grey-950 font-bold">Thomas S.</h7>
+        <p class="text-Grey-400 mb-12">Chief Operating Officer</p>
+      </div>
+    </div>
+    <div>
+      <img src="images/image-jennie.jpg" class="w-22 h-22 object-cover rounded-full flex justify-center mx-auto mb-5">
+      <div class="text-center max-w-sm mx-auto felx justify-center">
+        <p class="text-Grey-600 mb-5">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <h7. class="text-Grey-950 font-bold">Jennie F.</h7.>
+        <p class="text-Grey-400">Business Owner</p>
+    </div>
+  </div>
+
+</section>
+
+<div class="grid grid-cols-2 md:grid-cols-4 mx-auto">
+
+<img src="images/desktop/image-gallery-milkbottles.jpg" alt="milk bottles" class="hidden md:block">
+<img src="images/mobile/image-gallery-milkbottles.jpg" alt="milk bottles" class="block md:hidden">
+<img src="images/desktop/image-gallery-orange.jpg" alt="orange" class="hidden md:block">
+<img src="images/mobile/image-gallery-orange.jpg" alt="orange" class="block md:hidden">
+<img src="images/desktop/image-gallery-cone.jpg" alt="cone" class="hidden md:block">
+<img src="images/mobile/image-gallery-cone.jpg" alt="cone" class="block md:hidden">
+<img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes" class="hidden md:block">
+<img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes" class="block md:hidden">
+
+</div>
+<footer>
+  <div class="bg-green-200 text-green-500 text-center p-10">
+
+    <a href="#" id="logo"><img src="images/logo_green.svg" class="mx-auto"></a>
+
+    <nav class="flex justify-center space-x-6 text-lg py-8">
+      <a href="#" class="p-2 hover:text-white ">About</a>
+      <a href="#" class=" p-2 hover:text-white ">Services</a>
+      <a href="#" class=" p-2 hover:text-white " >Projects</a>
+    </nav>
+
+    <div class="flex justify-center space-x-6 text-lg py-8">
+      <a href="#"><img src="images/icon-facebook.svg" alt="facebook"></a>
+      <a href="#"><img src="images/icon-instagram.svg" alt="instagram"></a>
+      <a href="#"><img src="images/icon-twitter.svg" alt="twitter"></a>
+      <a href="#"><img src="images/icon-pinterest.svg" alt="pinterest"></a>
+    </div>
+    
+    </div>
+  </footer>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">NIMA </a>.
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
