@@ -634,7 +634,10 @@
   border-style: solid;
   border-width: 0 0 40px 40px;
   border-color: transparent transparent rgb(255, 255, 255) transparent;
-  margin-left: 380px;
+  position: absolute;
+  top: -40px;
+  right: 40px;
+  z-index: 10;
 }
 @property --tw-translate-x {
   syntax: "*";
