@@ -26,6 +26,8 @@
   height: 0;
   border-style: solid;
   border-width: 0 0 40px 40px;
-  border-color: transparent transparent rgb(166, 26, 26) transparent;
-  margin: auto;
+  border-color: transparent transparent rgb(255, 255, 255) transparent;
+  margin-left: 380px;
+
+
 }

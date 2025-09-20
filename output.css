@@ -13,19 +13,12 @@
     --color-green-500: hsl(167, 34%, 41%);
     --color-green-800: hsl(167, 40%, 24%);
     --color-blue-800: hsl(198, 62%, 26%);
-    --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-sm: 24rem;
     --container-lg: 32rem;
-    --text-xs: 0.75rem;
-    --text-xs--line-height: calc(1 / 0.75);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
@@ -46,7 +39,6 @@
     --color-Grey-550: hsl(232, 10%, 55%);
     --color-Grey-400: hsl(210, 4%, 67%);
     --color-White: hsl(0, 100%, 100%);
-    --font-body: Barlow;
     --font-heading: Fraunces;
   }
 }
@@ -390,15 +382,8 @@
   .text-center {
     text-align: center;
   }
-  .font-body {
-    font-family: var(--font-body);
-  }
   .font-heading {
     font-family: var(--font-heading);
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -416,34 +401,8 @@
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
-  .text-xs {
-    font-size: var(--text-xs);
-    line-height: var(--tw-leading, var(--text-xs--line-height));
-  }
-  .text-\[5px\] {
-    font-size: 5px;
-  }
-  .text-\[10px\] {
-    font-size: 10px;
-  }
-  .text-\[12px\] {
-    font-size: 12px;
-  }
   .text-\[13px\] {
     font-size: 13px;
-  }
-  .text-\[14px\] {
-    font-size: 14px;
-  }
-  .text-\[15px\] {
-    font-size: 15px;
-  }
-  .text-\[20px\] {
-    font-size: 20px;
   }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
@@ -468,9 +427,6 @@
   .text-blue-800 {
     color: var(--color-blue-800);
   }
-  .text-gray-800 {
-    color: var(--color-gray-800);
-  }
   .text-green-500 {
     color: var(--color-green-500);
   }
@@ -486,12 +442,6 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
-  }
-  .text-shadow-Grey-950 {
-    --tw-text-shadow-color: hsl(212, 27%, 19%);
-    @supports (color: color-mix(in lab, red, red)) {
-      --tw-text-shadow-color: color-mix(in oklab, var(--color-Grey-950) var(--tw-text-shadow-alpha), transparent);
-    }
   }
   .after\:absolute {
     &::after {
@@ -683,8 +633,8 @@
   height: 0;
   border-style: solid;
   border-width: 0 0 40px 40px;
-  border-color: transparent transparent rgb(166, 26, 26) transparent;
-  margin: auto;
+  border-color: transparent transparent rgb(255, 255, 255) transparent;
+  margin-left: 380px;
 }
 @property --tw-translate-x {
   syntax: "*";
@@ -735,15 +685,6 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-text-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-text-shadow-alpha {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
 @property --tw-content {
   syntax: "*";
   initial-value: "";
@@ -767,8 +708,6 @@
       --tw-space-x-reverse: 0;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
-      --tw-text-shadow-color: initial;
-      --tw-text-shadow-alpha: 100%;
       --tw-content: "";
       --tw-duration: initial;
     }
